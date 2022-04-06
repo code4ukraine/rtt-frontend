@@ -1,0 +1,345 @@
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("fonts/NeueMontreal-Regular.woff") format("woff");
+}
+
+body {
+    width: 98%;
+    max-width: 980px;
+    font-family: NeueMontreal,arial,sans-serif;
+}
+
+#header {
+    width: 100%;
+    background-color: #0D0D0D;
+    margin-bottom: 20px;
+    height: 64px;
+}
+
+#header div.logo {
+    background-color: #FAE937;
+    width: 40px;
+    height: 32px;
+    margin: 16px 8px 16px 16px;
+    float: left;
+}
+
+#header div.logo img {
+    margin-left: 8px;
+    margin-top: 7px;
+}
+
+#header div.right {
+    border: 1px solid #262626;
+    float: right;
+    margin-top: 19px;
+    margin-right: 12px;
+    padding: 2px 4px 2px 4px;
+}
+
+#header h1 {
+    float: left;
+    font: NeueMontreal;
+    font-size: 16px;
+    line-height: 64px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#header a {
+    color: #A5A5A5;
+    text-decoration: none;
+    font: NeueMontreal,arial,sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+#header a:hover {
+    color: white;
+}
+
+#header a.selected {
+    color: white;
+}
+
+canvas {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#main h1 {
+    font-family: NeueMontreal,arial,sans-serif;
+    font-size: 28px;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+#main h2 {
+    font-family: NeueMontreal,arial,sans-serif;
+    font-size: 28px;
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+#main h3 {
+    font-family: NeueMontreal,arial,sans-serif;
+    font-size: 14px;
+    color: #0D0D0D;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+#map, #event {
+    padding: 8px;
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    font: NeueMontreal,arial,sans-serif;
+    font-size: 14px;
+    appearance: none;
+    border-color: #0D0D0D;
+    background-color: white;
+    color: black;
+}
+
+#event::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+#map option, #event option {
+    font: NeueMontreal,arial,sans-serif;
+    font-size: 14px;
+    padding-left: 8px;
+    background-color: white;
+    color: black;
+}
+
+#map {
+    background-image: url("icons/search.svg"), linear-gradient(#0D0D0D, #0D0D0D);
+    background-position: right 10px center, right 40px center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 20px 20px, 1px 100%;
+}
+
+#event {
+    background-image: url("icons/crosshairs.svg"), url("icons/chevron-down.svg"), linear-gradient(#0D0D0D, #0D0D0D);
+    background-position: 10px, right 10px center, right 40px center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 20px 20px, 20px 20px, 1px 100%;
+    padding-left: 40px;
+}
+
+#time {
+    table-layout: fixed;
+    width: 100%;
+    height: 8px;
+    font-size: 14;
+    color: #0D0D0D;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#time td {
+    height: 10px;
+    width: 20%;
+    padding: 5px;
+}
+
+#time .align-right {
+    text-align: right;
+}
+
+.days-7 {
+    background-color: #FEC876;
+}
+
+.days-6 {
+    background-color: #FCB25D;
+}
+
+.days-5 {
+    background-color: #FB9B4A;
+}
+
+.days-4 {
+    background-color: #FA833A;
+}
+
+.days-3 {
+    background-color: #F9682E;
+}
+
+.days-2 {
+    background-color: #F84C27;
+}
+
+.days-1 {
+    background-color: #FB461E;
+}
+
+.sighting {
+    border: 1px solid black;
+}
+
+.sighting table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.sighting td {
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.sighting .id {
+    background-color: black;
+    color: white;
+    width: 64px;
+    height: 56px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+}
+
+.sighting .title {
+    padding-left: 40px;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sighting .label {
+    text-align: right;
+    vertical-align: text-top;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sighting td.button {
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+
+.sighting a {
+    background-color:#FAE937;
+    border-radius:5px;
+    color:#0d0d0d;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sighting a:focus,.sighting a:hover {
+    background-color: #c9bc2f;
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#about, #disclaimer {
+    font-family: NeueMontreal,arial,sans-serif;
+    background-color: #0D0D0D;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 20px 10px 20px;
+}
+
+#about h2, #disclaimer h2 {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+    margin-top: 50px;
+    padding: 20px 20px 40px 20px;
+    background-color: #FAE937;
+}
+
+.hashtag {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#footer h2 {
+    text-decoration: underline;
+}
+
+#footer a {
+    color: black;
+    text-decoration: none;
+    font: NeueMontreal,arial,sans-serif;
+    font-size: 14px;
+}
+
+#footer div {
+    margin-bottom: 10px;
+}
+
+#footer div.socialMedia {
+    width: 120px;
+    height: 40px;
+    margin-right: 16px;
+    border: 1px solid #383838;
+    float: left;
+    background-image: url("icons/launch.svg");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+}
+
+#footer div.socialMedia a {
+    margin-left: 16px;
+    margin-top: 8px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.autocomplete {
+  position: relative;
+  margin-bottom: 20px;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  background-color: white;
+}
+.autocomplete-active {
+  background-color: #FAE937 !important;
+  color: #000000;
+}

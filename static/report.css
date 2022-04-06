@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("fonts/NeueMontreal-Regular.woff") format("woff");
+}
+
+body {
+    width: 100%;
+    max-width: 375px;
+    font-family: NeueMontreal,arial,sans-serif;
+    padding: 16px;
+}
+
+#locationInput button {
+    display: block;
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px lightgray solid;
+    border-radius: 4px;
+    color: #009DFF;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#locationInput button img {
+    margin-left: 8px;
+}
+
+#locationInput input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    border: 2px lightgray solid;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#locationInput label {
+    color: #3f3d36b7;
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    margin-top: 8px;
+}
+
+#timeInput input {
+    width: 100%;
+    height: 48px;
+    font-family: NeueMontreal,arial,sans-serif;
+    padding-left: 24px;
+    font-size: 14px;
+}
+
+#timeInput label {
+    color: #3f3d36b7;
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    margin-top: 8px;
+}
+
+.sightingTypeOption {
+    padding: 16px;
+    margin-bottom: 8px;
+    background-color: #F8F6F2;
+}
+
+.inputCount input {
+    height: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 90%;
+    margin-bottom: 8px;
+}
+
+#description {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 32px;
+    resize: none;
+    font-family: NeueMontreal,arial,sans-serif;
+    font-size: 16px;
+}
+
+#package {
+    width: 100%;
+    height: 48px;
+    background-color: #FFE100;
+    font-weight: bold;
+    border: 0;
+}

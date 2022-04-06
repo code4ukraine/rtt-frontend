@@ -1,0 +1,110 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  font-weight:normal;
+  font-size:18;
+  margin:0;
+}
+
+h3 {
+  font-weight:normal;
+  font-size:18;
+  margin:0;
+  color: rgb(126, 126, 126);
+}
+
+.main-cta {
+  position: sticky;
+  bottom: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 50px;
+  padding-bottom: 10px;
+  width: 100%;
+  border: 0;
+  background-color: #FAE937;
+  cursor: pointer;
+}
+
+.cta-icon {
+  top: 0.4rem;
+  position: relative;
+}
+
+.social-modal-wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+}
+
+.social-modal {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 1.5rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.social-modal-close {
+  float: right;
+  padding: 0;
+  border: 0;
+  background: initial;
+  cursor: pointer;
+}
+
+.social-modal-title {
+  font-weight: 600;
+}
+
+.social-modal-copy {
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* select {
+  padding: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 100%;
+  font: Inter,arial,sans-serif;
+  font-size: 14px;
+  appearance: none;
+  border-color: #0D0D0D;
+  background-color: white;
+}
+
+select option {
+  font: Inter,arial,sans-serif;
+  font-size: 14px;
+  padding-left: 8px;
+  background-color: white;
+}
+
+#event {
+  background-image: url("../icons/crosshairs.svg"), url("icons/chevron-down.svg"), linear-gradient(#0D0D0D, #0D0D0D);
+  background-image: linear-gradient(#0D0D0D, #0D0D0D);
+  background-position: 10px, 930px, 920px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 20px 20px, 20px 20px, 1px 100%;
+  padding-left: 40px;
+} */

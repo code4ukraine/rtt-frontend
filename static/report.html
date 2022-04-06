@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Russian Threat Tracker - Report</title>
+        <link rel="stylesheet" href="report.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+    <body>
+        <h1>Add a Sighting</h1>
+        <p>Complete the following form to offer analysts information on what you have observed. The more information the more accurately it can be used.</p>
+        <div id="locationInput">
+            <h3>Location</h3>
+            <p>Add your location via auto detect (preferable) or write in the location if you're not currently present at the location or unable to use auto detect.</p>
+            <button id="detectLocation">Auto detect my location <img src="icons/location.svg" /></button>
+            <input id="location" name="location" placeholder="e.g. Parovozna/Vyshneva, Kherson" type="text" />
+            <label for="location">Type in the Intersection and City (or coordinates if you know them). Example: Parovozna/Vyshneva, Kherson</label>
+        </div>
+        <div id="timeInput">
+            <h3>Time</h3>
+            <p>If your observation was at a different time, change the time below.</p>
+            <input id="time" name="time" type="datetime-local" />
+            <label for="time">Click to edit the time if this event did not occur right now.</label>
+        </div>
+        <div id="sightingTypeInput">
+            <h3>Sighting Type</h3>
+            <div class="sightingTypeOption">
+                <input type="radio" id="soldierCivilianClothes" name="sightingType" value="soldierCivilianClothes">
+                <label for="soldierCivilianClothes">Soldier in Civilian Clothing</label>
+            </div>
+            <div class="sightingTypeOption">
+                <input type="radio" id="uniformedSoldier" name="sightingType" value="uniformedSoldier">
+                <label for="uniformedSoldier">Uniformed Soldier</label>
+            </div>
+            <div class="sightingTypeOption">
+                <input type="radio" id="apc" name="sightingType" value="apc">
+                <label for="apc">Armored Personnel Carrier</label>
+            </div>
+            <div class="sightingTypeOption">
+                <input type="radio" id="tank" name="sightingType" value="tank">
+                <label for="tank">Tank</label>
+            </div>
+            <div class="sightingTypeOption">
+                <input type="radio" id="artillery" name="sightingType" value="artillery">
+                <label for="artillery">Artillery</label>
+            </div>
+            <div class="sightingTypeOption">
+                <input type="radio" id="artilleryRockets" name="sightingType" value="artilleryRockets">
+                <label for="artilleryRockets">Artillery Rockets</label>
+            </div>                  
+            <div class="sightingTypeOption">
+                <input type="radio" id="supplyTrucks" name="sightingType" value="supplyTrucks">
+                <label for="supplyTrucks">Supply Trucks</label>
+            </div>     
+            <div class="sightingTypeOption">
+                <input type="radio" id="commandPost" name="sightingType" value="commandPost">
+                <label for="commandPost">Command Post</label>
+            </div>     
+            <div class="sightingTypeOption">
+                <input type="radio" id="airplaneHelo" name="sightingType" value="airplaneHelo">
+                <label for="airplaneHelo">Airplane/Helicopter</label>
+            </div>     
+            <div class="sightingTypeOption">
+                <input type="radio" id="aaArtillery" name="sightingType" value="aaArtillery">
+                <label for="aaArtillery">Anti-Aircraft Artillery</label>
+            </div>     
+            <div class="sightingTypeOption">
+                <input type="radio" id="shorad" name="sightingType" value="shorad">
+                <label for="shorad">Short Range Air Defense</label>
+            </div>
+            <div class="sightingTypeOption">
+                <input type="radio" id="sad" name="sightingType" value="sad">
+                <label for="sad">Strategic Air Defense</label>
+            </div>
+            <div class="sightingTypeOption">
+                <input type="radio" id="roadBlock" name="sightingType" value="roadBlock">
+                <label for="roadBlock">Russian Road Block</label>
+            </div>
+            <div class="sightingTypeOption">
+                <input type="radio" id="other" name="sightingType" value="other" checked="true">
+                <label for="other">Other</label>
+            </div>
+            <div class="inputCount">
+                <input id="count" name="count" type="number" min="0" placeholder="How many? (Optional)" />
+            </div>
+        </div>
+        <div>
+            <h3>Description</h3>
+            <p>Provide a description of what you observed.</p>
+            <textarea id="description" name="description" placeholder="Description"></textarea>
+        </div>
+        <form>
+            <input id="feed" type="hidden" name="feed" />
+            <input id="password" type="hidden" name="password" />
+            <input id="info" type="hidden" name="info" />
+            <input id="binary" type="hidden" name="binary" />
+            <input id="package" type="submit" />
+        </form>
+
+        <script src="report.js"></script>
+    </body>
+</html>

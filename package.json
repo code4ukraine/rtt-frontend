@@ -1,0 +1,42 @@
+{
+  "name": "russiantrooptracker",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Code4Ukraine Contributors",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@googlemaps/markerclusterer": "^1.0.25",
+    "@googlemaps/react-wrapper": "^1.1.25",
+    "@hookform/resolvers": "^2.8.8",
+    "csv-writer": "^1.6.0",
+    "csvtojson": "^2.0.10",
+    "dompurify": "^2.3.6",
+    "fast-equals": "^3.0.0",
+    "lodash.debounce": "^4.0.8",
+    "next": "12.1.0",
+    "next-export-i18n": "^1.4.3",
+    "node-csv": "^0.1.2",
+    "react": "17.0.2",
+    "react-datetime-picker": "^3.5.0",
+    "react-dom": "17.0.2",
+    "react-google-maps": "^9.4.5",
+    "react-hook-form": "^7.27.1",
+    "react-select": "^5.2.2",
+    "recompose": "^0.30.0",
+    "styled-components": "^5.3.3",
+    "use-deep-compare-effect": "^1.8.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-next": "12.1.0",
+    "eslint-plugin-react": "^7.29.4"
+  }
+}

@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Russian Threat Tracker</title>
+    <link rel="stylesheet" href="viewer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="header">
+        <div class="logo"><img src="icons/logo.svg"></div>
+        <div><h1>Russian Threat Tracker</h1></div>
+        <div class="right">
+            <a href="index.html">UK</a>
+            <a href="index_ru.html">RU</a>
+            <a href="index_en.html" class="selected">EN</a>
+        </div>
+    </div>
+    <div id="main">
+        <h1 id="selection">Ukraine</h1>
+        <h2>Sightings from the last 5 days</h2>
+        <select id="map">
+            <option value="ukraine" data-bounds="20.83,45.15,41.92,53.03">Ukraine</option>
+            <option value="tile" data-bounds="20.73,44.35,41.92,53.03"
+                    data-size="0.3295,0.1257" data-grid="72,70">Nearby</option>
+            <option value="kyiv" data-bounds="29.878,50.216,31.195,50.696">Kyiv</option>
+            <option value="lviv" data-bounds="23.382,49.61,24.699,50.096">Lviv</option>
+            <option value="zhytomyr" data-bounds="28.029,50.007,29.347,50.489">Zhytomyr</option>
+            <option value="dnipro" data-bounds="34.417,48.227,35.734,48.727">Dnipro</option>
+            <option value="sumy" data-bounds="34.147,50.674,35.465,51.15">Sumy</option>
+            <option value="kharkiv" data-bounds="35.581,49.73,36.899,50.215">Kharkiv</option>
+            <option value="kherson" data-bounds="31.982,46.36,33.299,46.878">Kherson</option>
+            <option value="donetsk" data-bounds="37.149,47.732,38.467,48.237">Donetsk</option>
+            <option value="mariupol" data-bounds="36.764,46.916,38.081,47.428">Mariupol</option>
+            <option value="odesa" data-bounds="29.876,46.226,31.193,46.745">Odesa</option>
+        </select>
+        <canvas id="mapCanvas"></canvas>
+        <div>
+            
+            <h3>Type of Event</h3>
+            <div class="autocomplete">
+                <input id="event" type="text" placeholder="All events"
+                 data-options="Soldier in Civilian Clothing,Uniformed Soldier,Armored Personnel Carrier,Tank,Artillery,Artillery Rockets,Supply Trucks,Command Post,Airplane / Helicopter,Anti-Aircraft Artillery,Short Range Air Defense,Strategic Air Defense,Russian Road Block">
+            </div>
+        </div>
+
+        <div>
+            <h3>Time of Event</h3>
+            <table id="time">
+                <tr>
+                    <td class="days-5"></td>
+                    <td class="days-4"></td>
+                    <td class="days-3"></td>
+                    <td class="days-2"></td>
+                    <td class="days-1"></td>
+                </tr>
+                <tr>
+                    <td>5 days ago</td>
+                    <td colspan="3"></td>
+                    <td class="align-right">1 day ago</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="sightings">
+            <h3>Sightings</h3>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <h2>#ukranewar</h2>
+        <p>Help improve this map. If you have information showing the location of Russian force, please post on social using <span class="hashtag">#ukranewar</span></p>
+        <div>
+            <div class="socialMedia">
+                <a href="#">Twitter</a>
+            </div>
+            <div class="socialMedia">
+                <a href="#">Telegram</a>
+            </div>
+            <br/>
+        </div>
+    </div>
+
+    <div id="about">
+        <h2>About us</h2>
+        <p>Russian Threat Tracker provides a near-real time view of Russian military threats in Ukraine drawing from on-the-ground sources, social media, and data analytics of available data sources. It is built and continuously improved by Janes and a team of professionals from software companies, product design firms, and leading geospatial, mapping, and signals technology companies, as well as former members of the military and intelligence community.</p>
+
+        <p>This work is not being done in cooperation of any government. Russian Threat Tracker is intended to help the Ukrainian people protect themselves. We Stand with Ukraine.<p>
+    </div>
+
+    <div id="disclaimer">
+        <h2>Disclaimer</h2>
+        <p>The information on this application is unofficial and obtained from crowdsourcing and open source information. It is provided to promote awareness of the location of Russian forces in Ukraine, but due to the dynamic nature of the war, the accuracy of the data cannot be guaranteed. Please use at your own risk.</p>
+    </div>
+
+    <script src="viewer.js"></script>
+</body>
+
+</html>
